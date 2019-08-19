@@ -1,0 +1,84 @@
+$primary-color:rgb(239,79,73);
+$dark:rgb(69,76,80);
+$light:#fff;
+
+@font-face{
+    src: url(../../assets/Fonts/SF-Compact-Display-Regular.otf);
+    font-family: sf-reg;
+}
+
+@font-face{
+    src: url(../../assets/Fonts/SF-Compact-Display-Bold.otf);
+    font-family: sf-bold;
+}
+
+
+.container{
+    p{
+        text-align: center;
+        font-size: 1.2em;
+        font-family: sf-reg;
+        margin-top: 30px;
+    }
+    
+    .row{
+
+        @media screen and (min-width:540px){
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .form-group{
+        label{
+            display: block;
+        }
+        input{
+            padding: 15px;
+            background-color: $light;
+            color:$dark;
+            border-radius: 2%;
+            width: 100%;
+            &:disabled{
+                color: #dddd;
+                background-color: $dark;
+            }
+        }
+
+        .error-msg{
+            color: red;
+            font-weight: bold;
+        }
+
+        p{
+            margin-top: 15px;
+        }
+
+    }
+
+    .btn-group{
+
+        button{
+            border: 2px solid $primary-color;
+            background-color: transparent;
+            color: $primary-color;
+            text-transform: uppercase;
+            padding: 15px;
+            font-family: sf-bold;
+            font-weight: bold;
+            width: 50%;
+            margin: auto;
+
+            @media screen and (max-width:540px){
+                width: 100%;
+            }
+            
+        }
+    }
+
+
+    hr{
+        border: 1px solid grey;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+<div class="container">
+    <p>Please confirm or edit your contact information, so we can Notify you when you are approved for our BETA</p>
+    <hr>
+    <form [formGroup]="signupForm">
+        <div class="row">
+            <div class="col-lg-12 form-group">
+                <label>Name</label>
+                <input formControlName="nameFC" type="text">
+            </div>
+            <div class="col-lg-12 form-group">
+                    <label>Email</label>
+                    <input formControlName="emailFC" type="email">
+            </div>
+            <div class="col-lg-12 form-group">
+                    <label>Password</label>
+                    <input formControlName="passFC" type="password">
+                    <div *ngIf="isSubmit && f.passFC.errors" >
+                        <p class="error-msg">Please Enter Password</p>
+                    </div>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <div class="row">
+            <div class="col-lg-12 btn-group">
+                    <button (click)="onSubmit()">signup</button>
+            </div>
+        </div>
+
+</div>

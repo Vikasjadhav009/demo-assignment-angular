@@ -1,0 +1,76 @@
+$primary-color:rgb(239,79,73);
+$standard-margin:15px;
+
+@font-face{
+    src: url(../../assets/Fonts/SF-Compact-Display-Regular.otf);
+    font-family: sf-reg;
+}
+
+@font-face{
+    src: url(../../assets/Fonts/SF-Compact-Display-Bold.otf);
+    font-family: sf-bold;
+}
+
+
+.container{
+    text-align: center;
+    h6 {
+        font-family: sf-reg;
+        margin-top:2em;
+        span{
+            color: $primary-color;
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width:540px){
+            margin-top: 1em;
+        }
+    }
+
+    h1{
+        margin-top: $standard-margin;
+        color: $primary-color;
+        font-size: 3em;
+        font-family: sf-bold;
+
+        @media screen and (max-width:540px){
+            font-size: 2em;
+        }
+    }
+
+    p{
+        margin-top: $standard-margin;
+        font-size: 1.2em;
+        font-family: sf-reg;
+
+        @media screen and (max-width:540px){
+            font-size: 1em;
+        }
+    }
+
+    button{
+        margin-top: $standard-margin;
+        border: 2px solid $primary-color;
+        background-color: transparent;
+        color: $primary-color;
+        text-transform: uppercase;
+        padding: 15px;
+        font-weight: bold;
+        font-family: sf-bold;
+        font-size: 0.8em;
+
+        @media screen and (max-width:540px){
+            margin-top: 0;
+        }
+    }
+
+    .box1{
+        height:400px;
+        background-image: url(../../assets/images/cropbg.png);
+        background-position: center;
+
+        @media screen and (max-width:540px){
+            height: 250px;
+        }
+    }
+}
